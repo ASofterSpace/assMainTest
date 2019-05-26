@@ -83,6 +83,19 @@ cd ..
 cd ..
 
 
+cd ContinuousIprChecker
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo ContinuousIprChecker SUCCESS
+) else (
+	echo ContinuousIprChecker FAILURE
+)
+
+cd ..
+
+
 cd assMainTest
 
 pause

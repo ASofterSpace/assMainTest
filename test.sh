@@ -83,6 +83,19 @@ cd ..
 cd ..
 
 
+cd ContinuousIprChecker
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo ContinuousIprChecker SUCCESS
+else
+	echo ContinuousIprChecker FAILURE
+fi
+
+cd ..
+
+
 cd assMainTest
 
 pause
