@@ -8,9 +8,9 @@ cd Toolbox-Java
 ./silentbuild.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo Toolbox-Java SUCCESS
+	echo Toolbox-Java Build and Test SUCCESS
 else
-	echo Toolbox-Java FAILURE
+	echo Toolbox-Java Build and Test FAILURE
 fi
 
 cd ..
@@ -21,9 +21,22 @@ cd assEditor
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo assEditor SUCCESS
+	echo ASS Editor Build SUCCESS
 else
-	echo assEditor FAILURE
+	echo ASS Editor Build FAILURE
+fi
+
+cd ..
+
+
+cd Krass
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo Krass Build SUCCESS
+else
+	echo Krass Build FAILURE
 fi
 
 cd ..
@@ -34,9 +47,9 @@ cd LostAndFoundLogbook
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo LostAndFoundLogbook SUCCESS
+	echo Lost and Found Logbook Build SUCCESS
 else
-	echo LostAndFoundLogbook FAILURE
+	echo Lost and Found Logbook Build FAILURE
 fi
 
 cd ..
@@ -47,9 +60,9 @@ cd WebEngine
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo WebEngine SUCCESS
+	echo WebEngine Build SUCCESS
 else
-	echo WebEngine FAILURE
+	echo WebEngine Build FAILURE
 fi
 
 cd ..
@@ -60,9 +73,9 @@ cd CdmScriptEditor
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo CdmScriptEditor SUCCESS
+	echo CDM Script Editor Build SUCCESS
 else
-	echo CdmScriptEditor FAILURE
+	echo CDM Script Editor Build FAILURE
 fi
 
 cd ..
@@ -74,28 +87,34 @@ cd linux
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo cdm SUCCESS
+	echo cdm SUCCESS Build
 else
-	echo cdm FAILURE
+	echo cdm FAILURE Build
 fi
 
 cd ..
 cd ..
 
 
-cd ContinuousIprChecker
+cd IprAwarenessTool
 
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo ContinuousIprChecker SUCCESS
+	echo IPR Awareness Tool Build SUCCESS
 else
-	echo ContinuousIprChecker FAILURE
+	echo IPR Awareness Tool Build FAILURE
+fi
+
+./test.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo IPR Awareness Tool Test SUCCESS
+else
+	echo IPR Awareness Tool Test FAILURE
 fi
 
 cd ..
 
 
 cd assMainTest
-
-pause

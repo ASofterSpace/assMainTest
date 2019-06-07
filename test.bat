@@ -8,9 +8,9 @@ cd Toolbox-Java
 call silentbuild.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo Toolbox-Java SUCCESS
+	echo Toolbox-Java Build and Test SUCCESS
 ) else (
-	echo Toolbox-Java FAILURE
+	echo Toolbox-Java Build and Test FAILURE
 )
 
 cd ..
@@ -21,9 +21,22 @@ cd assEditor
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo assEditor SUCCESS
+	echo ASS Editor Build SUCCESS
 ) else (
-	echo assEditor FAILURE
+	echo ASS Editor Build FAILURE
+)
+
+cd ..
+
+
+cd Krass
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo Krass Build SUCCESS
+) else (
+	echo Krass Build FAILURE
 )
 
 cd ..
@@ -34,9 +47,9 @@ cd LostAndFoundLogbook
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo LostAndFoundLogbook SUCCESS
+	echo Lost and Found Logbook Build SUCCESS
 ) else (
-	echo LostAndFoundLogbook FAILURE
+	echo Lost and Found Logbook Build FAILURE
 )
 
 cd ..
@@ -47,9 +60,9 @@ cd WebEngine
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo WebEngine SUCCESS
+	echo WebEngine Build SUCCESS
 ) else (
-	echo WebEngine FAILURE
+	echo WebEngine Build FAILURE
 )
 
 cd ..
@@ -60,9 +73,9 @@ cd CdmScriptEditor
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo CdmScriptEditor SUCCESS
+	echo CDM Script Editor Build SUCCESS
 ) else (
-	echo CdmScriptEditor FAILURE
+	echo CDM Script Editor Build FAILURE
 )
 
 cd ..
@@ -74,23 +87,31 @@ cd windows
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo cdm SUCCESS
+	echo cdm Build SUCCESS
 ) else (
-	echo cdm FAILURE
+	echo cdm Build FAILURE
 )
 
 cd ..
 cd ..
 
 
-cd ContinuousIprChecker
+cd IprAwarenessTool
 
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo ContinuousIprChecker SUCCESS
+	echo IPR Awareness Tool Build SUCCESS
 ) else (
-	echo ContinuousIprChecker FAILURE
+	echo IPR Awareness Tool Build FAILURE
+)
+
+@echo | call test.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo IPR Awareness Tool Test SUCCESS
+) else (
+	echo IPR Awareness Tool Test FAILURE
 )
 
 cd ..
