@@ -52,6 +52,14 @@ if %ERRORLEVEL% equ 0 (
 	echo Lost and Found Logbook Build FAILURE
 )
 
+@echo | call test.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo Lost and Found Logbook Test SUCCESS
+) else (
+	echo Lost and Found Logbook Test FAILURE
+)
+
 cd ..
 
 

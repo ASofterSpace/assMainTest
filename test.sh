@@ -52,6 +52,14 @@ else
 	echo Lost and Found Logbook Build FAILURE
 fi
 
+./test.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo Lost and Found Logbook Test SUCCESS
+else
+	echo Lost and Found Logbook Test FAILURE
+fi
+
 cd ..
 
 
