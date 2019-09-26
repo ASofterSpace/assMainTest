@@ -125,4 +125,30 @@ fi
 cd ..
 
 
+cd MediaSorter
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo MediaSorter Build SUCCESS
+else
+	echo MediaSorter Build FAILURE
+fi
+
+cd ..
+
+
+cd MetaPlayer
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo MetaPlayer Build SUCCESS
+else
+	echo MetaPlayer Build FAILURE
+fi
+
+cd ..
+
+
 cd assMainTest

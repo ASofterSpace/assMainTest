@@ -125,6 +125,32 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+cd MediaSorter
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo MediaSorter Build SUCCESS
+) else (
+	echo MediaSorter Build FAILURE
+)
+
+cd ..
+
+
+cd MetaPlayer
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo MetaPlayer Build SUCCESS
+) else (
+	echo MetaPlayer Build FAILURE
+)
+
+cd ..
+
+
 cd assMainTest
 
 pause
