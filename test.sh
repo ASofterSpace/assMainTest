@@ -151,4 +151,17 @@ fi
 cd ..
 
 
+cd Picturizer
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo Picturizer Build SUCCESS
+else
+	echo Picturizer Build FAILURE
+fi
+
+cd ..
+
+
 cd assMainTest

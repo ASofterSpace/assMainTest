@@ -151,6 +151,19 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+cd Picturizer
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo Picturizer Build SUCCESS
+) else (
+	echo Picturizer Build FAILURE
+)
+
+cd ..
+
+
 cd assMainTest
 
 pause
