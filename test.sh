@@ -164,4 +164,17 @@ fi
 cd ..
 
 
+cd RandomDataGenerator
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo RandomDataGenerator Build SUCCESS
+else
+	echo RandomDataGenerator Build FAILURE
+fi
+
+cd ..
+
+
 cd assMainTest

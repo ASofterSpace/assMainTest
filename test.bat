@@ -164,6 +164,19 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+cd RandomDataGenerator
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo RandomDataGenerator Build SUCCESS
+) else (
+	echo RandomDataGenerator Build FAILURE
+)
+
+cd ..
+
+
 cd assMainTest
 
 pause
