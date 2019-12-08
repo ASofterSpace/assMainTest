@@ -42,6 +42,19 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+cd KrassGui
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo KrassGui Build SUCCESS
+) else (
+	echo KrassGui Build FAILURE
+)
+
+cd ..
+
+
 cd LostAndFoundLogbook
 
 @echo | call build.bat >nul 2>&1

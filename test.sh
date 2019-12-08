@@ -42,6 +42,19 @@ fi
 cd ..
 
 
+cd KrassGui
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo KrassGui Build SUCCESS
+else
+	echo KrassGui Build FAILURE
+fi
+
+cd ..
+
+
 cd LostAndFoundLogbook
 
 ./build.sh > /dev/null 2>&1
