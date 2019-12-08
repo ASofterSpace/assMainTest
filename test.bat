@@ -177,6 +177,19 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+cd PomPomPom
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo PomPomPom Build SUCCESS
+) else (
+	echo PomPomPom Build FAILURE
+)
+
+cd ..
+
+
 cd assMainTest
 
 pause

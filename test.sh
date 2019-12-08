@@ -177,4 +177,17 @@ fi
 cd ..
 
 
+cd PomPomPom
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo PomPomPom Build SUCCESS
+else
+	echo PomPomPom Build FAILURE
+fi
+
+cd ..
+
+
 cd assMainTest
