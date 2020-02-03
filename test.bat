@@ -203,6 +203,19 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+cd PdfQrReader
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo PdfQrReader Build SUCCESS
+) else (
+	echo PdfQrReader Build FAILURE
+)
+
+cd ..
+
+
 cd assMainTest
 
 pause

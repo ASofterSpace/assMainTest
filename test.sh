@@ -203,4 +203,17 @@ fi
 cd ..
 
 
+cd PdfQrReader
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo PdfQrReader Build SUCCESS
+else
+	echo PdfQrReader Build FAILURE
+fi
+
+cd ..
+
+
 cd assMainTest
