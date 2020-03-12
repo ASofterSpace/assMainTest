@@ -216,4 +216,17 @@ fi
 cd ..
 
 
+cd ConfigAggregator
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo ConfigAggregator Build SUCCESS
+else
+	echo ConfigAggregator Build FAILURE
+fi
+
+cd ..
+
+
 cd assMainTest

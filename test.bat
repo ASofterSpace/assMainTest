@@ -216,6 +216,19 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+cd ConfigAggregator
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo ConfigAggregator Build SUCCESS
+) else (
+	echo ConfigAggregator Build FAILURE
+)
+
+cd ..
+
+
 cd assMainTest
 
 pause
