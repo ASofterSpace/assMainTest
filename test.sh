@@ -29,6 +29,19 @@ fi
 cd ..
 
 
+cd assAccountant
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo ASS Accountant Build SUCCESS
+else
+	echo ASS Accountant Build FAILURE
+fi
+
+cd ..
+
+
 cd Krass
 
 ./build.sh > /dev/null 2>&1
