@@ -42,6 +42,19 @@ fi
 cd ..
 
 
+cd assUploader
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo ASS Uploader Build SUCCESS
+else
+	echo ASS Uploader Build FAILURE
+fi
+
+cd ..
+
+
 cd Krass
 
 ./build.sh > /dev/null 2>&1
