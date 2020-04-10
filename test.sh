@@ -3,6 +3,7 @@
 cd ..
 
 
+mkdir Toolbox-Java > /dev/null 2>&1
 cd Toolbox-Java
 
 ./silentbuild.sh > /dev/null 2>&1
@@ -16,6 +17,7 @@ fi
 cd ..
 
 
+mkdir assEditor > /dev/null 2>&1
 cd assEditor
 
 ./build.sh > /dev/null 2>&1
@@ -29,6 +31,7 @@ fi
 cd ..
 
 
+mkdir assAccountant > /dev/null 2>&1
 cd assAccountant
 
 ./build.sh > /dev/null 2>&1
@@ -42,6 +45,7 @@ fi
 cd ..
 
 
+mkdir assUploader > /dev/null 2>&1
 cd assUploader
 
 ./build.sh > /dev/null 2>&1
@@ -55,6 +59,7 @@ fi
 cd ..
 
 
+mkdir Krass > /dev/null 2>&1
 cd Krass
 
 ./build.sh > /dev/null 2>&1
@@ -68,6 +73,7 @@ fi
 cd ..
 
 
+mkdir KrassGui > /dev/null 2>&1
 cd KrassGui
 
 ./build.sh > /dev/null 2>&1
@@ -81,6 +87,7 @@ fi
 cd ..
 
 
+mkdir LostAndFoundLogbook > /dev/null 2>&1
 cd LostAndFoundLogbook
 
 ./build.sh > /dev/null 2>&1
@@ -102,6 +109,7 @@ fi
 cd ..
 
 
+mkdir WebEngine > /dev/null 2>&1
 cd WebEngine
 
 ./build.sh > /dev/null 2>&1
@@ -115,6 +123,7 @@ fi
 cd ..
 
 
+mkdir CdmScriptEditor > /dev/null 2>&1
 cd CdmScriptEditor
 
 ./build.sh > /dev/null 2>&1
@@ -128,7 +137,9 @@ fi
 cd ..
 
 
+mkdir cdm > /dev/null 2>&1
 cd cdm
+mkdir linux > /dev/null 2>&1
 cd linux
 
 ./build.sh > /dev/null 2>&1
@@ -143,6 +154,7 @@ cd ..
 cd ..
 
 
+mkdir IprAwarenessTool > /dev/null 2>&1
 cd IprAwarenessTool
 
 ./build.sh > /dev/null 2>&1
@@ -164,6 +176,7 @@ fi
 cd ..
 
 
+mkdir MediaSorter > /dev/null 2>&1
 cd MediaSorter
 
 ./build.sh > /dev/null 2>&1
@@ -177,6 +190,7 @@ fi
 cd ..
 
 
+mkdir MetaPlayer > /dev/null 2>&1
 cd MetaPlayer
 
 ./build.sh > /dev/null 2>&1
@@ -190,6 +204,7 @@ fi
 cd ..
 
 
+mkdir Picturizer > /dev/null 2>&1
 cd Picturizer
 
 ./build.sh > /dev/null 2>&1
@@ -203,6 +218,7 @@ fi
 cd ..
 
 
+mkdir RandomDataGenerator > /dev/null 2>&1
 cd RandomDataGenerator
 
 ./build.sh > /dev/null 2>&1
@@ -216,6 +232,7 @@ fi
 cd ..
 
 
+mkdir PomPomPom > /dev/null 2>&1
 cd PomPomPom
 
 ./build.sh > /dev/null 2>&1
@@ -229,6 +246,7 @@ fi
 cd ..
 
 
+mkdir PdfQrReader > /dev/null 2>&1
 cd PdfQrReader
 
 ./build.sh > /dev/null 2>&1
@@ -242,6 +260,7 @@ fi
 cd ..
 
 
+mkdir ConfigAggregator > /dev/null 2>&1
 cd ConfigAggregator
 
 ./build.sh > /dev/null 2>&1
@@ -250,6 +269,20 @@ if [ $? -eq 0 ]; then
 	echo ConfigAggregator Build SUCCESS
 else
 	echo ConfigAggregator Build FAILURE
+fi
+
+cd ..
+
+
+mkdir HouseFinder > /dev/null 2>&1
+cd HouseFinder
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo HouseFinder Build SUCCESS
+else
+	echo HouseFinder Build FAILURE
 fi
 
 cd ..

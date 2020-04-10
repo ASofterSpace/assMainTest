@@ -3,6 +3,7 @@
 cd ..
 
 
+mkdir Toolbox-Java 2> NUL
 cd Toolbox-Java
 
 call silentbuild.bat >nul 2>&1
@@ -16,6 +17,7 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir assEditor 2> NUL
 cd assEditor
 
 @echo | call build.bat >nul 2>&1
@@ -29,6 +31,7 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir assAccountant 2> NUL
 cd assAccountant
 
 @echo | call build.bat >nul 2>&1
@@ -42,6 +45,7 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir assUploader 2> NUL
 cd assUploader
 
 @echo | call build.bat >nul 2>&1
@@ -55,6 +59,7 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir Krass 2> NUL
 cd Krass
 
 @echo | call build.bat >nul 2>&1
@@ -68,6 +73,7 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir KrassGui 2> NUL
 cd KrassGui
 
 @echo | call build.bat >nul 2>&1
@@ -81,6 +87,7 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir LostAndFoundLogbook 2> NUL
 cd LostAndFoundLogbook
 
 @echo | call build.bat >nul 2>&1
@@ -102,6 +109,7 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir WebEngine 2> NUL
 cd WebEngine
 
 @echo | call build.bat >nul 2>&1
@@ -115,6 +123,7 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir CdmScriptEditor 2> NUL
 cd CdmScriptEditor
 
 @echo | call build.bat >nul 2>&1
@@ -128,7 +137,9 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir cdm 2> NUL
 cd cdm
+mkdir windows 2> NUL
 cd windows
 
 @echo | call build.bat >nul 2>&1
@@ -143,6 +154,7 @@ cd ..
 cd ..
 
 
+mkdir IprAwarenessTool 2> NUL
 cd IprAwarenessTool
 
 @echo | call build.bat >nul 2>&1
@@ -164,6 +176,7 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir MediaSorter 2> NUL
 cd MediaSorter
 
 @echo | call build.bat >nul 2>&1
@@ -177,6 +190,7 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir MetaPlayer 2> NUL
 cd MetaPlayer
 
 @echo | call build.bat >nul 2>&1
@@ -190,6 +204,7 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir Picturizer 2> NUL
 cd Picturizer
 
 @echo | call build.bat >nul 2>&1
@@ -203,6 +218,7 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir RandomDataGenerator 2> NUL
 cd RandomDataGenerator
 
 @echo | call build.bat >nul 2>&1
@@ -216,6 +232,7 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir PomPomPom 2> NUL
 cd PomPomPom
 
 @echo | call build.bat >nul 2>&1
@@ -229,6 +246,7 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir PdfQrReader 2> NUL
 cd PdfQrReader
 
 @echo | call build.bat >nul 2>&1
@@ -242,6 +260,7 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir ConfigAggregator 2> NUL
 cd ConfigAggregator
 
 @echo | call build.bat >nul 2>&1
@@ -250,6 +269,20 @@ if %ERRORLEVEL% equ 0 (
 	echo ConfigAggregator Build SUCCESS
 ) else (
 	echo ConfigAggregator Build FAILURE
+)
+
+cd ..
+
+
+mkdir HouseFinder 2> NUL
+cd HouseFinder
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo HouseFinder Build SUCCESS
+) else (
+	echo HouseFinder Build FAILURE
 )
 
 cd ..
