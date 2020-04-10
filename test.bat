@@ -45,6 +45,20 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir assWebsite 2> NUL
+cd assWebsite
+
+@echo | call webengine.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo ASS Website Build SUCCESS
+) else (
+	echo ASS Website Build FAILURE
+)
+
+cd ..
+
+
 mkdir assUploader 2> NUL
 cd assUploader
 

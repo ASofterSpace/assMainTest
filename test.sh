@@ -45,6 +45,20 @@ fi
 cd ..
 
 
+mkdir assWebsite > /dev/null 2>&1
+cd assWebsite
+
+./webengine.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo ASS Website Build SUCCESS
+else
+	echo ASS Website Build FAILURE
+fi
+
+cd ..
+
+
 mkdir assUploader > /dev/null 2>&1
 cd assUploader
 
