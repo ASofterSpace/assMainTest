@@ -87,6 +87,20 @@ fi
 cd ..
 
 
+mkdir NonsenseNet > /dev/null 2>&1
+cd NonsenseNet
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo NonsenseNet Build SUCCESS
+else
+	echo NonsenseNet Build FAILURE
+fi
+
+cd ..
+
+
 mkdir Krass > /dev/null 2>&1
 cd Krass
 

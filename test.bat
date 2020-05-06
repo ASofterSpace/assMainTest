@@ -87,6 +87,20 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir NonsenseNet 2> NUL
+cd NonsenseNet
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo NonsenseNet Build SUCCESS
+) else (
+	echo NonsenseNet Build FAILURE
+)
+
+cd ..
+
+
 mkdir Krass 2> NUL
 cd Krass
 
