@@ -246,6 +246,20 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir AnkiCardGenerator 2> NUL
+cd AnkiCardGenerator
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo AnkiCardGenerator Build SUCCESS
+) else (
+	echo AnkiCardGenerator Build FAILURE
+)
+
+cd ..
+
+
 mkdir Picturizer 2> NUL
 cd Picturizer
 

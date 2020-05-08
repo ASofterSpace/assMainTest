@@ -246,6 +246,20 @@ fi
 cd ..
 
 
+mkdir AnkiCardGenerator > /dev/null 2>&1
+cd AnkiCardGenerator
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo AnkiCardGenerator Build SUCCESS
+else
+	echo AnkiCardGenerator Build FAILURE
+fi
+
+cd ..
+
+
 mkdir Picturizer > /dev/null 2>&1
 cd Picturizer
 
