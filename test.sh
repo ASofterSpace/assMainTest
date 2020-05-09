@@ -260,6 +260,20 @@ fi
 cd ..
 
 
+mkdir StockFinder > /dev/null 2>&1
+cd StockFinder
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo StockFinder Build SUCCESS
+else
+	echo StockFinder Build FAILURE
+fi
+
+cd ..
+
+
 mkdir Picturizer > /dev/null 2>&1
 cd Picturizer
 

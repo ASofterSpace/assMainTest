@@ -260,6 +260,20 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir StockFinder 2> NUL
+cd StockFinder
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo StockFinder Build SUCCESS
+) else (
+	echo StockFinder Build FAILURE
+)
+
+cd ..
+
+
 mkdir Picturizer 2> NUL
 cd Picturizer
 
