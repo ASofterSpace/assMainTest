@@ -59,6 +59,20 @@ fi
 cd ..
 
 
+mkdir assMusician > /dev/null 2>&1
+cd assMusician
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo ASS Musician Build SUCCESS
+else
+	echo ASS Musician Build FAILURE
+fi
+
+cd ..
+
+
 mkdir assWebsite > /dev/null 2>&1
 cd assWebsite
 
