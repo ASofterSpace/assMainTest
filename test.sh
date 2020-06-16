@@ -9,9 +9,9 @@ cd Toolbox-Java
 ./silentbuild.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo Toolbox-Java Build and Test SUCCESS
+	echo "SUCCESS :: Toolbox-Java Build and Test"
 else
-	echo Toolbox-Java Build and Test FAILURE
+	echo "FAILURE :: Toolbox-Java Build and Test"
 fi
 
 cd ..
@@ -23,9 +23,9 @@ cd assEditor
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo ASS Editor Build SUCCESS
+	echo "SUCCESS :: ASS Editor Build"
 else
-	echo ASS Editor Build FAILURE
+	echo "FAILURE :: ASS Editor Build"
 fi
 
 cd ..
@@ -37,9 +37,9 @@ cd assAccountant
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo ASS Accountant Build SUCCESS
+	echo "SUCCESS :: ASS Accountant Build"
 else
-	echo ASS Accountant Build FAILURE
+	echo "FAILURE :: ASS Accountant Build"
 fi
 
 cd ..
@@ -51,9 +51,9 @@ cd assArtist
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo ASS Artist Build SUCCESS
+	echo "SUCCESS :: ASS Artist Build"
 else
-	echo ASS Artist Build FAILURE
+	echo "FAILURE :: ASS Artist Build"
 fi
 
 cd ..
@@ -65,9 +65,9 @@ cd assMusician
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo ASS Musician Build SUCCESS
+	echo "SUCCESS :: ASS Musician Build"
 else
-	echo ASS Musician Build FAILURE
+	echo "FAILURE :: ASS Musician Build"
 fi
 
 cd ..
@@ -76,12 +76,12 @@ cd ..
 mkdir assWebsite > /dev/null 2>&1
 cd assWebsite
 
-./webengine.sh > /dev/null 2>&1
+./webengine_compile.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo ASS Website Build SUCCESS
+	echo "SUCCESS :: ASS Website Build"
 else
-	echo ASS Website Build FAILURE
+	echo "FAILURE :: ASS Website Build"
 fi
 
 cd ..
@@ -93,9 +93,9 @@ cd assUploader
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo ASS Uploader Build SUCCESS
+	echo "SUCCESS :: ASS Uploader Build"
 else
-	echo ASS Uploader Build FAILURE
+	echo "FAILURE :: ASS Uploader Build"
 fi
 
 cd ..
@@ -107,9 +107,9 @@ cd NonsenseNet
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo NonsenseNet Build SUCCESS
+	echo "SUCCESS :: NonsenseNet Build"
 else
-	echo NonsenseNet Build FAILURE
+	echo "FAILURE :: NonsenseNet Build"
 fi
 
 cd ..
@@ -121,9 +121,9 @@ cd Krass
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo Krass Build SUCCESS
+	echo "SUCCESS :: Krass Build"
 else
-	echo Krass Build FAILURE
+	echo "FAILURE :: Krass Build"
 fi
 
 cd ..
@@ -135,9 +135,9 @@ cd KrassGui
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo KrassGui Build SUCCESS
+	echo "SUCCESS :: KrassGui Build"
 else
-	echo KrassGui Build FAILURE
+	echo "FAILURE :: KrassGui Build"
 fi
 
 cd ..
@@ -149,17 +149,17 @@ cd LostAndFoundLogbook
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo Lost and Found Logbook Build SUCCESS
+	echo "SUCCESS :: Lost and Found Logbook Build"
 else
-	echo Lost and Found Logbook Build FAILURE
+	echo "FAILURE :: Lost and Found Logbook Build"
 fi
 
 ./test.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo Lost and Found Logbook Test SUCCESS
+	echo "SUCCESS :: Lost and Found Logbook Test"
 else
-	echo Lost and Found Logbook Test FAILURE
+	echo "FAILURE :: Lost and Found Logbook Test"
 fi
 
 cd ..
@@ -171,9 +171,9 @@ cd WebEngine
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo WebEngine Build SUCCESS
+	echo "SUCCESS :: WebEngine Build"
 else
-	echo WebEngine Build FAILURE
+	echo "FAILURE :: WebEngine Build"
 fi
 
 cd ..
@@ -185,9 +185,9 @@ cd CdmScriptEditor
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo CDM Script Editor Build SUCCESS
+	echo "SUCCESS :: CDM Script Editor Build"
 else
-	echo CDM Script Editor Build FAILURE
+	echo "FAILURE :: CDM Script Editor Build"
 fi
 
 cd ..
@@ -201,9 +201,9 @@ cd linux
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo cdm SUCCESS Build
+	echo "SUCCESS :: cdm Build"
 else
-	echo cdm FAILURE Build
+	echo "FAILURE :: cdm Build"
 fi
 
 cd ..
@@ -216,17 +216,17 @@ cd IprAwarenessTool
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo IPR Awareness Tool Build SUCCESS
+	echo "SUCCESS :: IPR Awareness Tool Build"
 else
-	echo IPR Awareness Tool Build FAILURE
+	echo "FAILURE :: IPR Awareness Tool Build"
 fi
 
 ./test.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo IPR Awareness Tool Test SUCCESS
+	echo "SUCCESS :: IPR Awareness Tool Test"
 else
-	echo IPR Awareness Tool Test FAILURE
+	echo "FAILURE :: IPR Awareness Tool Test"
 fi
 
 cd ..
@@ -238,9 +238,9 @@ cd MediaSorter
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo MediaSorter Build SUCCESS
+	echo "SUCCESS :: MediaSorter Build"
 else
-	echo MediaSorter Build FAILURE
+	echo "FAILURE :: MediaSorter Build"
 fi
 
 cd ..
@@ -252,9 +252,9 @@ cd MetaPlayer
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo MetaPlayer Build SUCCESS
+	echo "SUCCESS :: MetaPlayer Build"
 else
-	echo MetaPlayer Build FAILURE
+	echo "FAILURE :: MetaPlayer Build"
 fi
 
 cd ..
@@ -266,9 +266,9 @@ cd AnkiCardGenerator
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo AnkiCardGenerator Build SUCCESS
+	echo "SUCCESS :: AnkiCardGenerator Build"
 else
-	echo AnkiCardGenerator Build FAILURE
+	echo "FAILURE :: AnkiCardGenerator Build"
 fi
 
 cd ..
@@ -280,9 +280,9 @@ cd StockFinder
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo StockFinder Build SUCCESS
+	echo "SUCCESS :: StockFinder Build"
 else
-	echo StockFinder Build FAILURE
+	echo "FAILURE :: StockFinder Build"
 fi
 
 cd ..
@@ -294,9 +294,9 @@ cd Picturizer
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo Picturizer Build SUCCESS
+	echo "SUCCESS :: Picturizer Build"
 else
-	echo Picturizer Build FAILURE
+	echo "FAILURE :: Picturizer Build"
 fi
 
 cd ..
@@ -308,9 +308,9 @@ cd RandomDataGenerator
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo RandomDataGenerator Build SUCCESS
+	echo "SUCCESS :: RandomDataGenerator Build"
 else
-	echo RandomDataGenerator Build FAILURE
+	echo "FAILURE :: RandomDataGenerator Build"
 fi
 
 cd ..
@@ -322,9 +322,9 @@ cd PomPomPom
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo PomPomPom Build SUCCESS
+	echo "SUCCESS :: PomPomPom Build"
 else
-	echo PomPomPom Build FAILURE
+	echo "FAILURE :: PomPomPom Build"
 fi
 
 cd ..
@@ -336,9 +336,9 @@ cd PdfQrReader
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo PdfQrReader Build SUCCESS
+	echo "SUCCESS :: PdfQrReader Build"
 else
-	echo PdfQrReader Build FAILURE
+	echo "FAILURE :: PdfQrReader Build"
 fi
 
 cd ..
@@ -350,9 +350,9 @@ cd ConfigAggregator
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo ConfigAggregator Build SUCCESS
+	echo "SUCCESS :: ConfigAggregator Build"
 else
-	echo ConfigAggregator Build FAILURE
+	echo "FAILURE :: ConfigAggregator Build"
 fi
 
 cd ..
@@ -364,9 +364,9 @@ cd HouseFinder
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo HouseFinder Build SUCCESS
+	echo "SUCCESS :: HouseFinder Build"
 else
-	echo HouseFinder Build FAILURE
+	echo "FAILURE :: HouseFinder Build"
 fi
 
 cd ..

@@ -9,9 +9,9 @@ cd Toolbox-Java
 call silentbuild.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo Toolbox-Java Build and Test SUCCESS
+	echo SUCCESS :: Toolbox-Java Build and Test
 ) else (
-	echo Toolbox-Java Build and Test FAILURE
+	echo FAILURE :: Toolbox-Java Build and Test
 )
 
 cd ..
@@ -23,9 +23,9 @@ cd assEditor
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo ASS Editor Build SUCCESS
+	echo SUCCESS :: ASS Editor Build
 ) else (
-	echo ASS Editor Build FAILURE
+	echo FAILURE :: ASS Editor Build
 )
 
 cd ..
@@ -37,9 +37,9 @@ cd assAccountant
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo ASS Accountant Build SUCCESS
+	echo SUCCESS :: ASS Accountant Build
 ) else (
-	echo ASS Accountant Build FAILURE
+	echo FAILURE :: ASS Accountant Build
 )
 
 cd ..
@@ -51,9 +51,9 @@ cd assArtist
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo ASS Artist Build SUCCESS
+	echo SUCCESS :: ASS Artist Build
 ) else (
-	echo ASS Artist Build FAILURE
+	echo FAILURE :: ASS Artist Build
 )
 
 cd ..
@@ -65,9 +65,9 @@ cd assMusician
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo ASS Musician Build SUCCESS
+	echo SUCCESS :: ASS Musician Build
 ) else (
-	echo ASS Musician Build FAILURE
+	echo FAILURE :: ASS Musician Build
 )
 
 cd ..
@@ -76,12 +76,12 @@ cd ..
 mkdir assWebsite 2> NUL
 cd assWebsite
 
-@echo | call webengine.bat >nul 2>&1
+@echo | call webengine_compile.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo ASS Website Build SUCCESS
+	echo SUCCESS :: ASS Website Build
 ) else (
-	echo ASS Website Build FAILURE
+	echo FAILURE :: ASS Website Build
 )
 
 cd ..
@@ -93,9 +93,9 @@ cd assUploader
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo ASS Uploader Build SUCCESS
+	echo SUCCESS :: ASS Uploader Build
 ) else (
-	echo ASS Uploader Build FAILURE
+	echo FAILURE :: ASS Uploader Build
 )
 
 cd ..
@@ -107,9 +107,9 @@ cd NonsenseNet
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo NonsenseNet Build SUCCESS
+	echo SUCCESS :: NonsenseNet Build
 ) else (
-	echo NonsenseNet Build FAILURE
+	echo FAILURE :: NonsenseNet Build
 )
 
 cd ..
@@ -121,9 +121,9 @@ cd Krass
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo Krass Build SUCCESS
+	echo SUCCESS :: Krass Build
 ) else (
-	echo Krass Build FAILURE
+	echo FAILURE :: Krass Build
 )
 
 cd ..
@@ -135,9 +135,9 @@ cd KrassGui
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo KrassGui Build SUCCESS
+	echo SUCCESS :: KrassGui Build
 ) else (
-	echo KrassGui Build FAILURE
+	echo FAILURE :: KrassGui Build
 )
 
 cd ..
@@ -149,17 +149,17 @@ cd LostAndFoundLogbook
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo Lost and Found Logbook Build SUCCESS
+	echo SUCCESS :: Lost and Found Logbook Build
 ) else (
-	echo Lost and Found Logbook Build FAILURE
+	echo FAILURE :: Lost and Found Logbook Build
 )
 
 @echo | call test.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo Lost and Found Logbook Test SUCCESS
+	echo SUCCESS :: Lost and Found Logbook Test
 ) else (
-	echo Lost and Found Logbook Test FAILURE
+	echo FAILURE :: Lost and Found Logbook Test
 )
 
 cd ..
@@ -171,9 +171,9 @@ cd WebEngine
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo WebEngine Build SUCCESS
+	echo SUCCESS :: WebEngine Build
 ) else (
-	echo WebEngine Build FAILURE
+	echo FAILURE :: WebEngine Build
 )
 
 cd ..
@@ -185,9 +185,9 @@ cd CdmScriptEditor
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo CDM Script Editor Build SUCCESS
+	echo SUCCESS :: CDM Script Editor Build
 ) else (
-	echo CDM Script Editor Build FAILURE
+	echo FAILURE :: CDM Script Editor Build
 )
 
 cd ..
@@ -201,9 +201,9 @@ cd windows
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo cdm Build SUCCESS
+	echo SUCCESS :: cdm Build
 ) else (
-	echo cdm Build FAILURE
+	echo FAILURE :: cdm Build
 )
 
 cd ..
@@ -216,17 +216,17 @@ cd IprAwarenessTool
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo IPR Awareness Tool Build SUCCESS
+	echo SUCCESS :: IPR Awareness Tool Build
 ) else (
-	echo IPR Awareness Tool Build FAILURE
+	echo FAILURE :: IPR Awareness Tool Build
 )
 
 @echo | call test.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo IPR Awareness Tool Test SUCCESS
+	echo SUCCESS :: IPR Awareness Tool Test
 ) else (
-	echo IPR Awareness Tool Test FAILURE
+	echo FAILURE :: IPR Awareness Tool Test
 )
 
 cd ..
@@ -238,9 +238,9 @@ cd MediaSorter
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo MediaSorter Build SUCCESS
+	echo SUCCESS :: MediaSorter Build
 ) else (
-	echo MediaSorter Build FAILURE
+	echo FAILURE :: MediaSorter Build
 )
 
 cd ..
@@ -252,9 +252,9 @@ cd MetaPlayer
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo MetaPlayer Build SUCCESS
+	echo SUCCESS :: MetaPlayer Build
 ) else (
-	echo MetaPlayer Build FAILURE
+	echo FAILURE :: MetaPlayer Build
 )
 
 cd ..
@@ -266,9 +266,9 @@ cd AnkiCardGenerator
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo AnkiCardGenerator Build SUCCESS
+	echo SUCCESS :: AnkiCardGenerator Build
 ) else (
-	echo AnkiCardGenerator Build FAILURE
+	echo FAILURE :: AnkiCardGenerator Build
 )
 
 cd ..
@@ -280,9 +280,9 @@ cd StockFinder
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo StockFinder Build SUCCESS
+	echo SUCCESS :: StockFinder Build
 ) else (
-	echo StockFinder Build FAILURE
+	echo FAILURE :: StockFinder Build
 )
 
 cd ..
@@ -294,9 +294,9 @@ cd Picturizer
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo Picturizer Build SUCCESS
+	echo SUCCESS :: Picturizer Build
 ) else (
-	echo Picturizer Build FAILURE
+	echo FAILURE :: Picturizer Build
 )
 
 cd ..
@@ -308,9 +308,9 @@ cd RandomDataGenerator
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo RandomDataGenerator Build SUCCESS
+	echo SUCCESS :: RandomDataGenerator Build
 ) else (
-	echo RandomDataGenerator Build FAILURE
+	echo FAILURE :: RandomDataGenerator Build
 )
 
 cd ..
@@ -322,9 +322,9 @@ cd PomPomPom
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo PomPomPom Build SUCCESS
+	echo SUCCESS :: PomPomPom Build
 ) else (
-	echo PomPomPom Build FAILURE
+	echo FAILURE :: PomPomPom Build
 )
 
 cd ..
@@ -336,9 +336,9 @@ cd PdfQrReader
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo PdfQrReader Build SUCCESS
+	echo SUCCESS :: PdfQrReader Build
 ) else (
-	echo PdfQrReader Build FAILURE
+	echo FAILURE :: PdfQrReader Build
 )
 
 cd ..
@@ -350,9 +350,9 @@ cd ConfigAggregator
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo ConfigAggregator Build SUCCESS
+	echo SUCCESS :: ConfigAggregator Build
 ) else (
-	echo ConfigAggregator Build FAILURE
+	echo FAILURE :: ConfigAggregator Build
 )
 
 cd ..
@@ -364,9 +364,9 @@ cd HouseFinder
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo HouseFinder Build SUCCESS
+	echo SUCCESS :: HouseFinder Build
 ) else (
-	echo HouseFinder Build FAILURE
+	echo FAILURE :: HouseFinder Build
 )
 
 cd ..
