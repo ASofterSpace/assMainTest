@@ -73,6 +73,20 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir assDonkey 2> NUL
+cd assDonkey
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo SUCCESS :: ASS Donkey Build
+) else (
+	echo FAILURE :: ASS Donkey Build
+)
+
+cd ..
+
+
 mkdir assWebsite 2> NUL
 cd assWebsite
 

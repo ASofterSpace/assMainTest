@@ -73,6 +73,20 @@ fi
 cd ..
 
 
+mkdir assDonkey > /dev/null 2>&1
+cd assDonkey
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo "SUCCESS :: ASS Donkey Build"
+else
+	echo "FAILURE :: ASS Donkey Build"
+fi
+
+cd ..
+
+
 mkdir assWebsite > /dev/null 2>&1
 cd assWebsite
 
