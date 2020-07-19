@@ -193,6 +193,20 @@ fi
 cd ..
 
 
+mkdir BoardGamePlayer > /dev/null 2>&1
+cd BoardGamePlayer
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo "SUCCESS :: BoardGamePlayer Build"
+else
+	echo "FAILURE :: BoardGamePlayer Build"
+fi
+
+cd ..
+
+
 mkdir CdmScriptEditor > /dev/null 2>&1
 cd CdmScriptEditor
 

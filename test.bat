@@ -193,6 +193,20 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir BoardGamePlayer 2> NUL
+cd BoardGamePlayer
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo SUCCESS :: BoardGamePlayer Build
+) else (
+	echo FAILURE :: BoardGamePlayer Build
+)
+
+cd ..
+
+
 mkdir CdmScriptEditor 2> NUL
 cd CdmScriptEditor
 
