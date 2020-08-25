@@ -87,6 +87,20 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir assWorkbench 2> NUL
+cd assWorkbench
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo SUCCESS :: ASS Workbench Build
+) else (
+	echo FAILURE :: ASS Workbench Build
+)
+
+cd ..
+
+
 mkdir assWebsite 2> NUL
 cd assWebsite
 

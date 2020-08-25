@@ -87,6 +87,20 @@ fi
 cd ..
 
 
+mkdir assWorkbench > /dev/null 2>&1
+cd assWorkbench
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo "SUCCESS :: ASS Workbench Build"
+else
+	echo "FAILURE :: ASS Workbench Build"
+fi
+
+cd ..
+
+
 mkdir assWebsite > /dev/null 2>&1
 cd assWebsite
 
