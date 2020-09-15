@@ -316,6 +316,20 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir BackupGenerator 2> NUL
+cd BackupGenerator
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo SUCCESS :: BackupGenerator Build
+) else (
+	echo FAILURE :: BackupGenerator Build
+)
+
+cd ..
+
+
 mkdir StockFinder 2> NUL
 cd StockFinder
 

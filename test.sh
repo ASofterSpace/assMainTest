@@ -302,6 +302,20 @@ fi
 cd ..
 
 
+mkdir BackupGenerator > /dev/null 2>&1
+cd BackupGenerator
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo "SUCCESS :: BackupGenerator Build"
+else
+	echo "FAILURE :: BackupGenerator Build"
+fi
+
+cd ..
+
+
 mkdir AnkiCardGenerator > /dev/null 2>&1
 cd AnkiCardGenerator
 
