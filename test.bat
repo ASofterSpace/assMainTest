@@ -414,6 +414,20 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir XMLDiff 2> NUL
+cd XMLDiff
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo SUCCESS :: XML Diff Build
+) else (
+	echo FAILURE :: XML Diff Build
+)
+
+cd ..
+
+
 mkdir HouseFinder 2> NUL
 cd HouseFinder
 

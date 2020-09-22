@@ -414,6 +414,20 @@ fi
 cd ..
 
 
+mkdir XMLDiff > /dev/null 2>&1
+cd XMLDiff
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo "SUCCESS :: XML Diff Build"
+else
+	echo "FAILURE :: XML Diff Build"
+fi
+
+cd ..
+
+
 mkdir HouseFinder > /dev/null 2>&1
 cd HouseFinder
 
