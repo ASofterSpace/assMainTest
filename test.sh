@@ -45,6 +45,20 @@ fi
 cd ..
 
 
+mkdir assBrowser > /dev/null 2>&1
+cd assBrowser
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo "SUCCESS :: ASS Browser Build"
+else
+	echo "FAILURE :: ASS Browser Build"
+fi
+
+cd ..
+
+
 mkdir assArtist > /dev/null 2>&1
 cd assArtist
 

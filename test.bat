@@ -45,6 +45,20 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir assBrowser 2> NUL
+cd assBrowser
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo SUCCESS :: ASS Browser Build
+) else (
+	echo FAILURE :: ASS Browser Build
+)
+
+cd ..
+
+
 mkdir assArtist 2> NUL
 cd assArtist
 
