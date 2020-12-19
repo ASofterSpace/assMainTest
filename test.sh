@@ -45,6 +45,20 @@ fi
 cd ..
 
 
+mkdir assTrainer > /dev/null 2>&1
+cd assTrainer
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo "SUCCESS :: ASS Trainer Build"
+else
+	echo "FAILURE :: ASS Trainer Build"
+fi
+
+cd ..
+
+
 mkdir assBrowser > /dev/null 2>&1
 cd assBrowser
 

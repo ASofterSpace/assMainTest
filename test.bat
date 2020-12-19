@@ -45,6 +45,20 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir assTrainer 2> NUL
+cd assTrainer
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo SUCCESS :: ASS Trainer Build
+) else (
+	echo FAILURE :: ASS Trainer Build
+)
+
+cd ..
+
+
 mkdir assBrowser 2> NUL
 cd assBrowser
 
