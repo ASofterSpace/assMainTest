@@ -73,6 +73,20 @@ fi
 cd ..
 
 
+mkdir assBusinessFinder > /dev/null 2>&1
+cd assBusinessFinder
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo "SUCCESS :: ASS Business Finder Build"
+else
+	echo "FAILURE :: ASS Business Finder Build"
+fi
+
+cd ..
+
+
 mkdir assArtist > /dev/null 2>&1
 cd assArtist
 

@@ -73,6 +73,20 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir assBusinessFinder 2> NUL
+cd assBusinessFinder
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo SUCCESS :: ASS Business Finder Build
+) else (
+	echo FAILURE :: ASS Business Finder Build
+)
+
+cd ..
+
+
 mkdir assArtist 2> NUL
 cd assArtist
 
