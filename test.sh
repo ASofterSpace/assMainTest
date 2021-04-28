@@ -45,6 +45,20 @@ fi
 cd ..
 
 
+mkdir assErrorFinder > /dev/null 2>&1
+cd assErrorFinder
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo "SUCCESS :: ASS Error Finder Build"
+else
+	echo "FAILURE :: ASS Error Finder Build"
+fi
+
+cd ..
+
+
 mkdir assTrainer > /dev/null 2>&1
 cd assTrainer
 
