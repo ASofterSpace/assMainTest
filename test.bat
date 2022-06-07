@@ -498,6 +498,20 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir FinanceEmailWriter 2> NUL
+cd FinanceEmailWriter
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo SUCCESS :: FinanceEmailWriter Build
+) else (
+	echo FAILURE :: FinanceEmailWriter Build
+)
+
+cd ..
+
+
 cd assMainTest
 
 pause

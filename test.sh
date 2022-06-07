@@ -498,4 +498,18 @@ fi
 cd ..
 
 
+mkdir FinanceEmailWriter > /dev/null 2>&1
+cd FinanceEmailWriter
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo "SUCCESS :: FinanceEmailWriter Build"
+else
+	echo "FAILURE :: FinanceEmailWriter Build"
+fi
+
+cd ..
+
+
 cd assMainTest
