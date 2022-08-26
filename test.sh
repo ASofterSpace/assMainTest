@@ -344,6 +344,20 @@ fi
 cd ..
 
 
+mkdir MediaTextCreator > /dev/null 2>&1
+cd MediaTextCreator
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo "SUCCESS :: MediaTextCreator Build"
+else
+	echo "FAILURE :: MediaTextCreator Build"
+fi
+
+cd ..
+
+
 mkdir MetaPlayer > /dev/null 2>&1
 cd MetaPlayer
 

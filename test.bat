@@ -344,6 +344,20 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir MediaTextCreator 2> NUL
+cd MediaTextCreator
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo SUCCESS :: MediaTextCreator Build
+) else (
+	echo FAILURE :: MediaTextCreator Build
+)
+
+cd ..
+
+
 mkdir MetaPlayer 2> NUL
 cd MetaPlayer
 
