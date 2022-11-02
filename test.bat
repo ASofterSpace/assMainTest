@@ -526,6 +526,20 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir EgosmgVcdMerger 2> NUL
+cd EgosmgVcdMerger
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo SUCCESS :: EGOS-MG VCD Merger Build
+) else (
+	echo FAILURE :: EGOS-MG VCD Merger Build
+)
+
+cd ..
+
+
 cd assMainTest
 
 pause

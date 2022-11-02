@@ -526,4 +526,18 @@ fi
 cd ..
 
 
+mkdir EgosmgVcdMerger > /dev/null 2>&1
+cd EgosmgVcdMerger
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo "SUCCESS :: EGOS-MG VCD Merger Build"
+else
+	echo "FAILURE :: EGOS-MG VCD Merger Build"
+fi
+
+cd ..
+
+
 cd assMainTest
