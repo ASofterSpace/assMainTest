@@ -526,6 +526,20 @@ fi
 cd ..
 
 
+mkdir SeebrueckeScheduleCreator > /dev/null 2>&1
+cd SeebrueckeScheduleCreator
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo "SUCCESS :: SeebrueckeScheduleCreator Build"
+else
+	echo "FAILURE :: SeebrueckeScheduleCreator Build"
+fi
+
+cd ..
+
+
 mkdir EgosmgVcdMerger > /dev/null 2>&1
 cd EgosmgVcdMerger
 

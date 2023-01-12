@@ -526,6 +526,20 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir SeebrueckeScheduleCreator 2> NUL
+cd SeebrueckeScheduleCreator
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo SUCCESS :: SeebrueckeScheduleCreator Build
+) else (
+	echo FAILURE :: SeebrueckeScheduleCreator Build
+)
+
+cd ..
+
+
 mkdir EgosmgVcdMerger 2> NUL
 cd EgosmgVcdMerger
 
