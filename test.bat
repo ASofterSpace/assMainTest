@@ -31,6 +31,20 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir assSecretary 2> NUL
+cd assSecretary
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo SUCCESS :: ASS Secretary Build
+) else (
+	echo FAILURE :: ASS Secretary Build
+)
+
+cd ..
+
+
 mkdir assAccountant 2> NUL
 cd assAccountant
 

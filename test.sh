@@ -31,6 +31,20 @@ fi
 cd ..
 
 
+mkdir assSecretary > /dev/null 2>&1
+cd assSecretary
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo "SUCCESS :: ASS Secretary Build"
+else
+	echo "FAILURE :: ASS Secretary Build"
+fi
+
+cd ..
+
+
 mkdir assAccountant > /dev/null 2>&1
 cd assAccountant
 
