@@ -540,6 +540,20 @@ fi
 cd ..
 
 
+mkdir CielTaskListOrganizer > /dev/null 2>&1
+cd CielTaskListOrganizer
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo "SUCCESS :: CielTaskListOrganizer Build"
+else
+	echo "FAILURE :: CielTaskListOrganizer Build"
+fi
+
+cd ..
+
+
 mkdir SeebrueckeScheduleCreator > /dev/null 2>&1
 cd SeebrueckeScheduleCreator
 
