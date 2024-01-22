@@ -540,15 +540,15 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
-mkdir CielTaskListOrganizer 2> NUL
-cd CielTaskListOrganizer
+mkdir CielHeraTaskListOrganizer 2> NUL
+cd CielHeraTaskListOrganizer
 
 @echo | call build.bat >nul 2>&1
 
 if %ERRORLEVEL% equ 0 (
-	echo SUCCESS :: CielTaskListOrganizer Build
+	echo SUCCESS :: CielHeraTaskListOrganizer Build
 ) else (
-	echo FAILURE :: CielTaskListOrganizer Build
+	echo FAILURE :: CielHeraTaskListOrganizer Build
 )
 
 cd ..

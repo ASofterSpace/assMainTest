@@ -540,15 +540,15 @@ fi
 cd ..
 
 
-mkdir CielTaskListOrganizer > /dev/null 2>&1
-cd CielTaskListOrganizer
+mkdir CielHeraTaskListOrganizer > /dev/null 2>&1
+cd CielHeraTaskListOrganizer
 
 ./build.sh > /dev/null 2>&1
 
 if [ $? -eq 0 ]; then
-	echo "SUCCESS :: CielTaskListOrganizer Build"
+	echo "SUCCESS :: CielHeraTaskListOrganizer Build"
 else
-	echo "FAILURE :: CielTaskListOrganizer Build"
+	echo "FAILURE :: CielHeraTaskListOrganizer Build"
 fi
 
 cd ..
