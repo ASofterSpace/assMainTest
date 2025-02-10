@@ -199,6 +199,20 @@ if %ERRORLEVEL% equ 0 (
 cd ..
 
 
+mkdir assCyberSnail 2> NUL
+cd assCyberSnail
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo SUCCESS :: ASS CyberSnail Build
+) else (
+	echo FAILURE :: ASS CyberSnail Build
+)
+
+cd ..
+
+
 mkdir NonsenseNet 2> NUL
 cd NonsenseNet
 
@@ -493,6 +507,20 @@ if %ERRORLEVEL% equ 0 (
 	echo SUCCESS :: ConfigAggregator Build
 ) else (
 	echo FAILURE :: ConfigAggregator Build
+)
+
+cd ..
+
+
+mkdir FileValidator 2> NUL
+cd FileValidator
+
+@echo | call build.bat >nul 2>&1
+
+if %ERRORLEVEL% equ 0 (
+	echo SUCCESS :: FileValidator Build
+) else (
+	echo FAILURE :: FileValidator Build
 )
 
 cd ..

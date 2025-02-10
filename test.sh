@@ -199,6 +199,20 @@ fi
 cd ..
 
 
+mkdir assCyberSnail > /dev/null 2>&1
+cd assCyberSnail
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo "SUCCESS :: ASS CyberSnail Build"
+else
+	echo "FAILURE :: ASS CyberSnail Build"
+fi
+
+cd ..
+
+
 mkdir NonsenseNet > /dev/null 2>&1
 cd NonsenseNet
 
@@ -493,6 +507,20 @@ if [ $? -eq 0 ]; then
 	echo "SUCCESS :: ConfigAggregator Build"
 else
 	echo "FAILURE :: ConfigAggregator Build"
+fi
+
+cd ..
+
+
+mkdir FileValidator > /dev/null 2>&1
+cd FileValidator
+
+./build.sh > /dev/null 2>&1
+
+if [ $? -eq 0 ]; then
+	echo "SUCCESS :: FileValidator Build"
+else
+	echo "FAILURE :: FileValidator Build"
 fi
 
 cd ..
